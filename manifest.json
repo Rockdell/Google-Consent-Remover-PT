@@ -1,0 +1,25 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+    "name": "Google Consent Remover",
+    "version": "1.0",
+
+    "description": "Automatically skips the Google Consent redirect",
+    "icons": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "64": "icons/icon-64.png",
+        "128": "icons/icon-128.png" 
+    },
+
+    "permissions": [
+        "cookies", "webRequest", "webRequestBlocking",
+        "*://*.google.com/*", "*://*.youtube.com/*",
+        "*://*.google.pt/*", "*://*.youtube.pt/*"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
