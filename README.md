@@ -1,1 +1,1 @@
-Google-Consent-Remover-PT.
+Google-Consent-Remover-PT..
